@@ -1,5 +1,5 @@
 import React from 'react'
-import ArrowDown from './arrowDown'
+import ArrowDown from './ArrowDown'
 import '../../styles/Header/scrollmedal.scss'
 
 export default function ScrollDownMedal() {
