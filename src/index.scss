@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+$breakpoint1: 750px;
+$breakpoint2: 1000px;
+$breakpoint3: 1250px;
+$breakpoint4: 2000px;
+
+
+:root {
+
+
+  // color-scheme: light dark;
+ 
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --red: #ff4037;
+  --red-orange: #ff5c34;
+  --orange: #ff7f3b;
+  --orange-yellow: #ff9834;
+  --yellow: #ffb834;
+
+  --yellow-tale: #faca72;                
+  --orange-tale: #f79561; 
+  --red-tale: #fa665f;
+
+}
+
+html {
+  font-size: 12px;
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: $breakpoint1) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: $breakpoint3) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: $breakpoint4) {
+  html {
+    font-size: 25px;
+  }
+}

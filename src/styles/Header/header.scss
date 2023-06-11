@@ -1,0 +1,188 @@
+@import '../../index.scss';
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/header_bg_edit.jpg');
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+    overflow: hidden;
+    color: rgb(36, 25, 25);
+    position: relative;
+
+    & #logo {
+        position: absolute;
+        top: 2em;
+        left: 2em;
+        width: 8rem;
+    }
+
+    & .hero-container {
+        position: absolute;
+        height: 90vh;
+        width: auto;
+        left: -150px;
+        bottom: 0px;
+        
+        & .hero-wrapper {
+            position: relative;
+            height: 100%;
+            width: 100%;
+
+            & .hero {
+                position: absolute;
+                z-index: 10;
+                height: 100%;
+                width: auto;
+            }
+
+        
+            & #heroColor {
+                z-index: 8;
+                opacity: 0;
+                animation: 6s ease-in 1s forwards fadeInHero ;
+            }
+            & #heroBlack {
+                z-index: 9;
+
+                & #mikeBody{
+                    fill: transparent;
+                    stroke-width: 50px;
+                    stroke: linear-gradient(0deg, red, blue);
+                    animation: 7s ease-in 0s forwards heroOutline;
+                    stroke-dashoffset: 16300;
+                }
+            }
+        }
+    }
+    
+
+    & .intro-container{
+        position: absolute;
+        display: inline-block;
+        left: 40%;
+        top: 15%;
+        overflow-wrap: break-word;
+        white-space: normal;
+        
+        & .intro-wrapper {
+            position: relative;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+
+            & > p {
+               display: inline-block; 
+            }
+            
+            & p:first-child {
+                color: var(--orange-tale);
+                
+            }
+            & p:last-child {
+                color: var(--yellow-tale);                
+            }
+            
+            & #name {
+                color: var(--red-tale);
+                padding-block: 8px;
+                text-align: center;
+                font-size: 3rem;
+            }
+        }          
+    }
+
+}
+
+@keyframes fadeInHero {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes heroOutline {
+    0% {
+        stroke-dasharray: 0 37105.504;
+        opacity: 1;
+    }
+    80% {
+        stroke-dasharray: 37105.504 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: $breakpoint1) {
+    header {
+        & .intro-container {
+            left: 42%;
+            top: 25%;
+            
+            & .intro-wrapper {
+                text-align: unset;
+
+                & > * {
+                    padding: 1rem;
+                    // position: absolute;
+                }
+
+                & > p {
+                    position: absolute;
+                }
+                & p:first-child {
+                    background-color: #fa665f;
+                    color: black;
+                    left: 20%;
+                    top: -3rem;
+                    
+                }
+                & p:last-child {
+                    color: black;
+                    background-color: #faca72;    
+                    left: 10%;            
+                    bottom: -3rem;
+                }
+                
+                & #name {
+                    color: black;
+                    background-color: #f79561;
+                    font-size: 4rem;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint2) {
+    header {
+        & .hero-container {
+            left: 0;
+        }
+
+        & .intro-container {
+            left: 49%;
+            top: 25%;
+        }
+    }
+}
+@media screen and (min-width: $breakpoint3) {
+    header {
+        & .hero-container {
+            left: 10%;
+        }
+    }
+}
+@media screen and (min-width: $breakpoint4) {
+    header {
+        & .hero-container {
+            left: 20%;
+        }
+    }
+}

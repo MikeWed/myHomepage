@@ -1,0 +1,62 @@
+@import '../../index.scss';
+
+.scrolldown-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    .scrolldown-wrapper {
+        position: relative;
+        width: 5vw;
+        height: 5vw;
+        min-width: 50px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 80%;
+        z-index: 11;
+        
+        & .ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: radial-gradient(white 50%, transparent 51%), conic-gradient(var(--red), var(--orange), var(--yellow), var(--orange), var(--red));
+            animation: ring 4s linear infinite;
+        }
+        
+        & svg {
+            position: absolute;
+            fill: var(--red);
+            // fill: black;
+            width: 60%;
+            animation: arrow 2s ease-in-out infinite;
+        }
+    }
+
+    &:hover .ring {
+        animation: ringOnHover 2s linear infinite;
+    }
+
+}
+
+@keyframes ring {
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
+}
+@keyframes arrow {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(5px);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes ringOnHover {
+    from {transform: rotate3D(1,1,1,0deg);}
+    to {transform: rotate3D(1,1,1,360deg);}
+}
+// @keyframes ringOnHover {
+//     from {transform: rotateX(0);}
+//     to {transform: rotateX(360deg);}
+// }
+
