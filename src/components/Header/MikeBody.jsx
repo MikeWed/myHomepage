@@ -13,9 +13,9 @@ export default function MikeBody() {
 >
   <defs>
 <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-<stop offset="0%" stopColor="#ff4037"/>
-<stop offset="50%" stopColor="#ff7f3b"/>
-<stop offset="100%" stopColor="#ffb834"/>
+<stop offset="0%" stopColor="#3493f8"/>
+<stop offset="50%" stopColor="#24caf8"/>
+<stop offset="100%" stopColor="#33f8e8"/>
 </linearGradient>
 </defs>
 

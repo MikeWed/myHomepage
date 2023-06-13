@@ -3,7 +3,7 @@
 header {
     width: 100%;
     height: 100vh;
-    background-image: url('../../assets/header_bg_edit.jpg');
+    background-image: url('../../assets/header_bg_blue.jpg');
     background-position: center center;
     background-repeat: none;
     background-size: cover;
@@ -20,15 +20,17 @@ header {
 
     & .hero-container {
         position: absolute;
-        height: 90vh;
-        width: auto;
-        left: -150px;
+        height: 65vh;
+        left: 50%;
+        transform: translateX(-50%);
         bottom: 0px;
         
         & .hero-wrapper {
             position: relative;
             height: 100%;
             width: 100%;
+            display: flex;
+            justify-content: center;
 
             & .hero {
                 position: absolute;
@@ -49,7 +51,6 @@ header {
                 & #mikeBody{
                     fill: transparent;
                     stroke-width: 50px;
-                    stroke: linear-gradient(0deg, red, blue);
                     animation: 7s ease-in 0s forwards heroOutline;
                     stroke-dashoffset: 16300;
                 }
@@ -60,35 +61,51 @@ header {
 
     & .intro-container{
         position: absolute;
-        display: inline-block;
-        left: 40%;
-        top: 15%;
-        overflow-wrap: break-word;
+        display: block;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        // text-align: center;
+        background-color: blue;
+        top: 20%;
+        overflow-wrap: normal;
         white-space: normal;
+        white-space: nowrap;
         
         & .intro-wrapper {
             position: relative;
-            text-align: center;
             font-size: 1.5rem;
             font-weight: 700;
 
+            & > * {
+                padding: 1rem;
+                display: block;
+                width: fit-content;
+            }
+
             & > p {
-               display: inline-block; 
+               position: absolute;
             }
             
             & p:first-child {
-                color: var(--orange-tale);
+                background-color: var(--color3);
+                color: black;
+                left: 20%;
+                top: -3rem;
                 
             }
             & p:last-child {
-                color: var(--yellow-tale);                
+                color: black;
+                background-color: var(--color5);    
+                left: 10%;            
+                bottom: -3rem;
             }
             
             & #name {
-                color: var(--red-tale);
-                padding-block: 8px;
-                text-align: center;
+                color: black;
+                background-color: var(--color1);
                 font-size: 3rem;
+
             }
         }          
     }
@@ -118,56 +135,16 @@ header {
     }
 }
 
-@media screen and (min-width: $breakpoint1) {
-    header {
-        & .intro-container {
-            left: 42%;
-            top: 25%;
-            
-            & .intro-wrapper {
-                text-align: unset;
-
-                & > * {
-                    padding: 1rem;
-                    // position: absolute;
-                }
-
-                & > p {
-                    position: absolute;
-                }
-                & p:first-child {
-                    background-color: #fa665f;
-                    color: black;
-                    left: 20%;
-                    top: -3rem;
-                    
-                }
-                & p:last-child {
-                    color: black;
-                    background-color: #faca72;    
-                    left: 10%;            
-                    bottom: -3rem;
-                }
-                
-                & #name {
-                    color: black;
-                    background-color: #f79561;
-                    font-size: 4rem;
-                }
-            }
-
-        }
-    }
-}
 
 @media screen and (min-width: $breakpoint2) {
     header {
         & .hero-container {
-            left: 0;
+            height: 80vh;
+            left: 20%;
         }
 
         & .intro-container {
-            left: 49%;
+            left: 60%;
             top: 25%;
         }
     }
@@ -175,14 +152,21 @@ header {
 @media screen and (min-width: $breakpoint3) {
     header {
         & .hero-container {
-            left: 10%;
+            left: 25%;
+        }
+        & .intro-container {
+            top: 40%;
         }
     }
 }
 @media screen and (min-width: $breakpoint4) {
     header {
         & .hero-container {
-            left: 20%;
+            left: 30%;
+        }
+        & .intro-container {
+            left: 60%;
+            top: 40%;
         }
     }
 }

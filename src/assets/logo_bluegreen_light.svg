@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="67.227737mm"
+   height="20.545797mm"
+   viewBox="0 0 67.227738 20.545797"
+   version="1.1"
+   id="svg1007"
+   sodipodi:docname="logo_sw.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1009"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs1004">
+    <linearGradient
+       id="linearGradient962">
+      <stop
+         style="stop-color:#3493f8;stop-opacity:1;"
+         offset="0"
+         id="stop966" />
+      <stop
+         style="stop-color:#24caf8;stop-opacity:1;"
+         offset="0.49460551"
+         id="stop1697" />
+      <stop
+         style="stop-color:#33f8e8;stop-opacity:1;"
+         offset="1"
+         id="stop968" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient962"
+       id="linearGradient964"
+       x1="67.391029"
+       y1="92.680168"
+       x2="134.82738"
+       y2="92.73613"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-67.46736,-82.123383)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;font-family:Geologica;-inkscape-font-specification:'Geologica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient964);fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       x="65.209579"
+       y="100.18562"
+       id="text1130"
+       inkscape:export-filename="logo_bluegreen_light.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan1128"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5778px;font-family:Geologica;-inkscape-font-specification:'Geologica, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient964);fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="65.209579"
+         y="100.18562">|  mike</tspan></text>
+  </g>
+</svg>

@@ -17,15 +17,15 @@ $breakpoint4: 2000px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --red: #ff4037;
-  --red-orange: #ff5c34;
-  --orange: #ff7f3b;
-  --orange-yellow: #ff9834;
-  --yellow: #ffb834;
+  --color1: #3493f8;
+  --color2: #32aff8;
+  --color3: #24caf8;
+  --color4: #33ebf8;
+  --color5: #33f8e8;
 
-  --yellow-tale: #faca72;                
-  --orange-tale: #f79561; 
-  --red-tale: #fa665f;
+  --color5-tale: #33f8e8;                
+  --color3-tale: #24caf8; 
+  --color1-tale: #3493f8;
 
 }
 
@@ -44,7 +44,7 @@ html {
 
 @media screen and (min-width: $breakpoint1) {
   html {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: $breakpoint3) {

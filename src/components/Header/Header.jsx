@@ -3,7 +3,7 @@ import '../../styles/Header/header.scss'
 import ScrollDownMedal from './ScrollDownMedal'
 import MikeBody from './MikeBody'
 
-import logo_light from '../../assets/logo_light.svg'
+import logo_light from '../../assets/logo_blueGreen_light.svg'
 import hero1 from '../../assets/mike_hero1.png'
 
 export default function Header() {
