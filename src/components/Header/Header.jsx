@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/Header/header.scss'
+import './header.scss'
 import ScrollDownMedal from './ScrollDownMedal'
 import MikeBody from './MikeBody'
 

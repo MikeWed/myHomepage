@@ -21,7 +21,7 @@ export default function MikeBody() {
 
   <g transform="translate(0.000000,1295.000000) scale(0.100000,-0.100000)"
   id='mikeBody'
-  fill='none'
+  fill='blue'
   stroke="url(#linear)"
   strokeWidth={'20px'}>
     <path 
